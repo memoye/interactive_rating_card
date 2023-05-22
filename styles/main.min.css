@@ -1,0 +1,17 @@
+body,
+html {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.thankyouState {
+  display: none;
+}/*# sourceMappingURL=main.min.css.map */
