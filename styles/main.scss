@@ -1,20 +1,103 @@
-@import "colors";
+@import "globals";
 
-body, 
-html 
-{
-    margin: 0;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100vh;
 }
 
 body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    background: $vDrkBlue;
-    font-family: 'Overpass', sans-serif;
-}
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: $vDrkBlue;
+  font-family: $priFont;
+  font-size: 15px;
 
-.thankyouState {
+  .card {
+    @include radGradient($darkBlue, $darkBlue2);
+    @include centeredGrid;
+    align-content: space-between;
+    padding: 1.5em;
+    width: 25rem;
+    max-width: 100vw;
+    border-radius: 1.5rem;
+
+    &__content {
+      color: white;
+    }
+
+    &__img {
+      @include roundness;
+      margin-bottom: 2rem;
+    }
+
+    &__ratingArea {
+      @include flexbox;
+      list-style-type: none;
+      margin-bottom: 2rem;
+    }
+
+    &__rating {
+      color: $medGrey;
+      line-height: 0.5rem;
+      font-weight: 700;
+
+      &--active {
+        @include roundness;
+
+        &:hover {
+          background: $medGrey;
+          color: white;
+        }
+
+        &:active {
+          background: $orange;
+        }
+      }
+    }
+
+    &__ratingInfo {
+        padding: 0.5em 1.5em;
+        color: $orange;
+        background: $darkBlue;
+        width: fit-content;
+        border-radius: 20px;
+        margin: 0 auto 2rem;
+      }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+
+    &__desc {
+      color: $lightGrey;
+      margin-bottom: 2rem;
+      line-height: 1.5em;
+    }
+
+    &__cta {
+      @include buttons;
+
+      &:hover {
+        color: $orange;
+        background: white;
+      }
+    }
+  }
+
+  .thankyouState {
     display: none; // for now
+    text-align: center;
+
+    &__img {
+      margin-bottom: 2em;
+    }
+  }
 }
