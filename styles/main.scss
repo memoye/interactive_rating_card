@@ -57,20 +57,21 @@ body {
           color: white;
         }
 
-        &:active {
+        &:active,
+        &:focus {
           background: $orange;
         }
       }
     }
 
     &__ratingInfo {
-        padding: 0.5em 1.5em;
-        color: $orange;
-        background: $darkBlue;
-        width: fit-content;
-        border-radius: 20px;
-        margin: 0 auto 2rem;
-      }
+      padding: 0.5em 1.5em;
+      color: $orange;
+      background: $darkBlue;
+      width: fit-content;
+      border-radius: 20px;
+      margin: 0 auto 2rem;
+    }
 
     &__title {
       margin-bottom: 1rem;

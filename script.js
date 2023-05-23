@@ -4,15 +4,23 @@ const ratingState = {
     disp: document.querySelector(".ratingState").style
 },
     thankyouState = {
-        rating: document.querySelector("#rating"),
+        ratingVal: document.querySelector("#rating"),
         disp: document.querySelector(".thankyouState").style
     };
 
-console.log(ratingState.stars);
-
-function updateState(){
+function submitAction() {
+    console.log(ratingState.ratingVal);
     ratingState.disp.display = "none";
     thankyouState.disp.display = "block";
 }
 
-ratingState.submit.addEventListener("click", updateState)
+console.log(thankyouState.ratingVal);
+
+ratingState.stars.forEach(star => {
+    star.addEventListener("click", () => {
+        console.log(star);
+        thankyouState.ratingVal.innerHTML = star.innerHTML;
+    })
+});
+
+ratingState.submit.addEventListener("click", submitAction);
