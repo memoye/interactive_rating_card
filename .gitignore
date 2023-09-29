@@ -4,6 +4,7 @@
 #####################################################
 *.sketch
 *.fig
+.vscode
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
@@ -15,5 +16,8 @@
 .DS_Store
 .prettierignore
 
-README.md
+
 style-guide.md
+README-template.md
+style-guide.md
+design

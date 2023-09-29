@@ -50,6 +50,7 @@ body .card__rating {
   color: hsl(216, 12%, 54%);
   line-height: 0.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 body .card__rating--active {
   background: hsl(213, 19%, 18%);
@@ -60,7 +61,7 @@ body .card__rating--active:hover {
   background: hsl(216, 12%, 54%);
   color: white;
 }
-body .card__rating--active:active {
+body .card__rating--active:active, body .card__rating--active:focus {
   background: hsl(25, 97%, 53%);
 }
 body .card__ratingInfo {

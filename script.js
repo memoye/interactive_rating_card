@@ -1,3 +1,4 @@
+
 const ratingState = {
     stars: document.querySelectorAll(".card__rating"),
     submit: document.querySelector(".cta"),
@@ -18,9 +19,15 @@ console.log(thankyouState.ratingVal);
 
 ratingState.stars.forEach(star => {
     star.addEventListener("click", () => {
-        console.log(star);
+        for (i of ratingState.stars) {
+            i.style.background = '#252d37'
+        }
         thankyouState.ratingVal.innerHTML = star.innerHTML;
+        star.style.background = 'hsl(25, 97%, 53%)'
+        star.style.color = 'white'
     })
 });
+
+
 
 ratingState.submit.addEventListener("click", submitAction);

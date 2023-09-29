@@ -48,6 +48,7 @@ body {
       color: $medGrey;
       line-height: 0.5rem;
       font-weight: 700;
+      cursor: pointer;
 
       &--active {
         @include roundness;
