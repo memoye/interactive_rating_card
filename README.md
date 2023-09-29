@@ -22,29 +22,21 @@ Users should be able to:
 
 - View the optimal layout for the section depending on their device's screen size
 
-### Screenshots
+### Screenshot
 
 ![My solution](./images/solution.png)
 
 ### Links
 
-- You can see [my solution here](https://www.frontendmentor.io/solutions/social-proof-section-solution-B8kGBlUJRO)
-- View the [live site demo here](https://social-proof-section-five-beige.vercel.app/)
+- You can see [my solution here](https://www.frontendmentor.io/solutions/interactive-rating-component-with-html-scss-and-js-dpn7m3KH18)
+- View the [live site demo here](https://fm-rating-card.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- SCSS custom properties
-- Flexbox
-- CSS Grid
-- Desktop-first workflow
 - [SASS (.scss)](https://sass-lang.com/) - CSS Preprocessor
-
-### What I learned
-
-I got more familiar with layouts. The `align-self` css property became clear to me.
 
 ## Author
 
