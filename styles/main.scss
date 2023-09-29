@@ -24,7 +24,7 @@ body {
     @include radGradient($darkBlue, $darkBlue2);
     @include centeredGrid;
     align-content: space-between;
-    padding: 1.5em;
+    padding: 2em;
     width: 25rem;
     max-width: 100vw;
     border-radius: 1.5rem;
