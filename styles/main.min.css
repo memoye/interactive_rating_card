@@ -37,7 +37,7 @@ body .card__img {
   background: hsl(213, 19%, 18%);
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem;
+  padding: 1rem 1.1rem;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
